@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>trabalhando dados 2</h1>
+    <p id="resultado">aqui vai aparecer o resultado...</p>
+    <button onclick="inicio()">clique para começar</button>
+    <section id="resultado">
+    </section>
+    <script>
+        function inicio(){
+            let nome = window.prompt('qual é o seu nome?');
+            let res = window.document.getElementById('resultado');
+            res.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
+                        }
+                        //o res.innerHTML esta dizendo que no html ele deve por isto dentro do resultado ,logo apos escrevermos o nome
+                        //A crase=(``) Você pode inserir variáveis ou expressões diretamente dentro de uma string delimitada por crases, facilitando a concatenação de valores.
+                        //o símbolo "$" é usado em conjunto com as crases (``) para interpolação de strings em template literals.
+                        //a notação "&#x1F596" representa um caractere Unicode, especificamente um emoji.
+    </script>
+</body>
+</html>

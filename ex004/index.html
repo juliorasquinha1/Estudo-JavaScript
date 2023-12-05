@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{font:12pt Arial;}
+        button{font-size:12pt ; padding: 30px; background-color: chocolate;}
+    </style>
+</head>
+<body>
+   <h1>trabalhando com dados</h1>
+   <button onclick="inicio()">clique para começar</button>
+   <script>
+    function inicio(){
+        let nome = window.prompt('qual é o seu nome')
+        //window.prompt cria uma caixa de dialogo que pede algo para ser inserido,imagine nele como um (input)
+       window.alert(`ola, ${nome} ! é um prazer te conhecer`)
+       ///para deixar o nome em azul significando que é uma variavel devemos por: ($), chaves( {} ) e crases=(``).
+    }
+   </script> 
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    button{background-color: darkorange;}
+   </style>
+     
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >meu desafio</h1>
+    <p id="resultado">escolha um numero de 1 a 3 e aparecera um resultado aqui</p>
+    <button onclick="resultado1()">clique para iniciar a resposta</button>
+    <script>
+        function resultado1(){
+            let botao = window.prompt('escolha o numero');
+            let res = window.document.getElementById('resultado');
+            res.innerHTML = `<p>voce clicou no <strong>${botao}</strong>°botao &#x1F596;`
+
+        }
+    </script>
+</body>
+</html>
