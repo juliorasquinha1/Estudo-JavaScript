@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Calcule seu indice de massa corporal</h1>
+        <p id="resultado">aqui vai aparecer o resultado...</p>
+        <button onclick="incio()">click me</button>
+    </section>
+    <script>
+        function incio(){
+            let nome = window.alert('vamos calcular os numeros agora!');
+            let numero1 = window.prompt("qual o seu peso");
+            let numero2 = window.prompt("qual sua altura");
+            let soma = parseInt(numero1) / (parseFloat(numero2) * parseFloat(numero2));
+            let res = window.document.getElementById('resultado');
+            res.innerHTML = "o resultado da soma de "+numero1+" e "+numero2+" foi: "+soma.toFixed(2);
+            let imc = soma 
+            if(imc < 18.5){
+                //voce nao esta saudavel
+                window.alert("voce nao esta saudavel");
+            }else if(imc >= 18.5 && imc <= 24.9){
+                //voce esta saudavel
+                window.alert("voce esta saudavel");
+
+            }
+            //
+            // pesquise o significado de cada coisa na linha 18..
+        }
+    </script>
+</body>
+</html>
