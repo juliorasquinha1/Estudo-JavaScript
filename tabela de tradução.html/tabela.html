@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+@keyframes rainbowText {
+  0% {
+    color: violet;
+  }
+  14.3% {
+    color: indigo;
+  }
+  28.6% {
+    color: blue;
+  }
+  42.9% {
+    color: green;
+  }
+  57.2% {
+    color: yellow;
+  }
+  71.5% {
+    color: orange;
+  }
+  85.8% {
+    color: red;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+/* Apply rainbow text color animation to .titulo1 */
+.titulo1 {
+  
+  
+  border-radius: 7px;
+  animation: rainbowText 6s infinite; /* Apply rainbow text color animation */
+}
+.titulo2 {
+  background-color: black;
+  width: 200px;
+  border-radius: 7px;
+  animation: rainbowText 6s infinite; /* Apply rainbow text color animation */
+}
+table, th, td {
+  border: 1px solid;
+  border-color: black;
+}
+table{
+    width:40%;
+    
+   
+}
+th{
+    height:50px;
+    background-color: black;
+    color: white;}
+
+    .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 16px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    }
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="traduções.js" defer></script>
+</head>
+<body>
+
+   <center><h1 class="titulo1">TABELA DE TRADUÇÕES</h1></center>
+   <center>
+    <div ><h4>TRADUÇÕES</h4></div>
+
+    <button class="button" style="vertical-align:middle" onclick="TRADUCAO1()"><span>ORIGINAL</button></span>
+
+    <p id='resultado'></p><center/>
+
+</body>
+</html>
